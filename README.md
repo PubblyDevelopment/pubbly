@@ -81,9 +81,20 @@ Eventually all this will be packaged in the console to create the APK. See tech 
 Josh Powe: CEO
 
 Susan Darwin: PUBBLY Creative Director
+
 Richard Lopez: PUBBLY Designer/Associate Animation Director
+
 David Wanta: PUBBLY Designer/Animator
+
 Errol Hicks: PUBBLY Designer/Animator
+
+
+## Content
+Curriclum Concepts International (CCI)
+
+and
+
+PUBBLY Creative Team
 
 
 ### Software: 
