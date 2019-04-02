@@ -53,7 +53,7 @@ For lessons, download all art that is in English or Swahili. Retain same size of
 -- You can stitch the lesson pages you want in Units. Some of the lessons contain reviews that can be taken out
 -- If you download a parent and make changes to that parent in the PUBBLY desktop application and then upload that parent into an existing series -- all the children will be updated.
 
-##### For literacy and Reading
+#### For literacy and Reading
 
 All Languages are taught differently. Lessons in another language can reuse assets or add new art. We would suggest you based your lessons on an early language learners program and build your lessons from scratch. You can watch our YouTube videos for help to build new lessons.
 https://www.youtube.com/channel/UCnkoKt9PYqaMumT1V2giGbQ
