@@ -32,7 +32,49 @@ Each project repository has it's own readme with startup instructions.
 
 ## How to use the complete system
 
-...
+To alter the content on the CCI XPRIZE submission
+
+* Download the PUBBLY desktop application from www.pubbly.com or the pubbly_design_tools repository
+
+* Create a console. (Startup instructions on the pubbly_console repository)
+
+* Populate the console with English and Swahili content. (CCI exports hosted on BOX... link to box)
+
+In Stitch App you will see an English XPRIZE School and the Swahili XPRIZE School. You will need to create a new “School”. For example “French School”. Here you will gather all your books and lessons that will be in the program according to level. In each level build the games that are appropriate for that level. Games will have three levels of difficulty. Create new children in each game series and swap in the visual assets and audio assets to customize for the new language.
+
+Model your build on either the English or Swahili Build. To see which series an element in Stiitch App comes from -- hover over the page and the title of the series will show.
+
+Content is updated and created in the Variable Exports and Static Exports sections of the console. Swaps are done in the console in Variable Assets. Create new children in existing series to swap. New lessons are created in the PUBBLY desktop application and uploaded into new series in Varialble Assets or Static Assets. See [YouTube lessons](https://www.youtube.com/channel/UCnkoKt9PYqaMumT1V2giGbQ) on how to build from scratch.
+
+#### For Math
+
+For lessons, download all art that is in English or Swahili. Retain same size of art in GIMP/similar and update with the new language. Create a new child in the series and drop new assets into the lesson. Click “view” to view updated lesson.
+-- You can also download the lessons and make changes. Create a new series and upload the new lesson. Swaps for languages can be done in the new series.
+-- You can stitch the lesson pages you want in Units. Some of the lessons contain reviews that can be taken out
+-- If you download a parent and make changes to that parent in the PUBBLY desktop application and then upload that parent into an existing series -- all the children will be updated.
+
+##### For literacy and Reading
+
+All Languages are taught differently. Lessons in another language can reuse assets or add new art. We would suggest you based your lessons on an early language learners program and build your lessons from scratch. You can watch our YouTube videos for help to build new lessons.
+https://www.youtube.com/channel/UCnkoKt9PYqaMumT1V2giGbQ
+
+#### For the Books.
+
+Download pages and replace text with new language keeping the same size PNG or JPEG. Create a child in the series with the new languages name. Swap in new art and swap in new audio. Click view on new child to see the updated book.
+
+#### For Epic quest.
+
+We recommend downloading each element of the quest you want to use and updating it with your new language and then creating a new folder in Series call EpicQuestFrench. Use “Maps” to contect all the TBD nodes.
+
+#### Notes.
+
+Keep all pages the same size so that they can be stitched to other pages. 1000 x 641 is what most of our screen sizes are. This was done for the Pixel C. These programs will also run on desktop online or locally.
+
+Tutorials are added by tech.
+
+Eventually all this will be packaged in the console to create the APK. See tech instructions to package.
+
+----
 
 ## Credits
 
