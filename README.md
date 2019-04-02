@@ -90,7 +90,7 @@ Errol Hicks: PUBBLY Designer/Animator
 
 
 ## Content
-Curriclum Concepts International (CCI)
+Curriculum Concepts International (CCI)
 
 and
 
