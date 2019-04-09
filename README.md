@@ -2,7 +2,7 @@
 
 ## Overview
 
-Pubbly is Team CCI's winning submission to the Global Learning Xprize. It is four main software projects, each in it's own repository, each with a specific README.
+Pubbly is Team CCI's winning submission to the Global Learning Xprize. It is four major (and one minor) software projects, each in it's own repository, each with a specific README.
 
 * [Pubbly Design Tools](https://github.com/PubblyDevelopment/pubbly_design_tools)
 
@@ -19,6 +19,10 @@ A LAMP CMS used to template and manage "exports" created from the design tools.
 * [Pubbly SchoolHouse](https://github.com/PubblyDevelopment/pubbly_schoolhouse)
 
 A simple Cordova project where you can plug in content made with the Pubbly Design Tools and Console, attach the HTML5 Pubbly Engine, and build an android APK.
+
+* [Pubbly Submission Installation](https://github.com/PubblyDevelopment/pubbly_submission_installation)
+
+Bash and Shell scripts to take the android image files generated from SchoolHouse steps and mass-install on hundreds of tablets.
 
 ---
 
@@ -68,9 +72,9 @@ If you do not have the time or resources to create your own program, you are mor
 
 ### Submission from existing: Direct asset modification
 
-The easiest way to slightly modify our submission is to directly edit the assets in their respective cordova roots. Xprize is hosting both the English and Swahili cordova root folder on their Github account [here](https://github.com/XPRIZE/GLEXP-Team-CCI/tree/master/Cordova%20schoolHouse%20app). For instructions on how to use either language's root folder, see [Pubbly SchoolHouse]() section "Using Xprize web root".
+The easiest way to slightly modify our submission is to directly edit the assets in their respective cordova roots. Xprize is hosting both the English and Swahili cordova root folder on [their Github account](https://github.com/XPRIZE/GLEXP-Team-CCI/tree/master/Cordova%20schoolHouse%20app). For instructions on how to use either language's root folder, see [Pubbly SchoolHouse](https://github.com/PubblyDevelopment/pubbly_schoolhouse) section "Adding content: Xprize web roots".
 
-Once you have the language specific root folder inside a properly structured cordova project, manually edit the XML, or targeted assets and rebuild the cordova project, see [Pubbly SchoolHouse](https://github.com/PubblyDevelopment/pubbly_schoolhouse) section "Building APK". For instructions on how the XML files effect the structure of each book, see [Pubbly Engine](https://github.com/PubblyDevelopment/pubbly_engine) section "XML explained".
+Once you have the language specific root folder inside a properly structured cordova project, manually edit targeted assets and rebuild the cordova project.
 
 ### Submission from existing: Xprize console duplication
 
