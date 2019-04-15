@@ -1,8 +1,10 @@
 # Pubbly
 
+Pubbly is a collection of software projects used to create Team CCI's winning submission to the Global Learning Xprize.
+
 ## Overview
 
-Pubbly is Team CCI's winning submission to the Global Learning Xprize. It is four major (and one minor) software projects, each in it's own repository, each with a specific README.
+Pubbly is comprised is four major (and one minor) software projects, each in it's own repository, each with a specific README.
 
 * [Pubbly Design Tools](https://github.com/PubblyDevelopment/pubbly_design_tools)
 
@@ -72,13 +74,13 @@ If you do not have the time or resources to create your own program, you are mor
 
 ### Submission from existing: Direct asset modification
 
-The easiest way to slightly modify our submission is to directly edit the assets in their respective cordova roots. Xprize is hosting both the English and Swahili cordova root folder on [their Github account](https://github.com/XPRIZE/GLEXP-Team-CCI/tree/master/Cordova%20schoolHouse%20app). For instructions on how to use either language's root folder, see [Pubbly SchoolHouse](https://github.com/PubblyDevelopment/pubbly_schoolhouse) section "Adding content: Xprize web roots".
+The easiest way to slightly modify our submission is to directly edit the assets in their respective cordova roots. For instructions on how to use either language's root folder to duplicate our exact Xprize submission, see [Pubbly SchoolHouse](https://github.com/PubblyDevelopment/pubbly_schoolhouse) section "Adding content: Xprize web roots".
 
 Once you have the language specific root folder inside a properly structured cordova project, manually edit targeted assets and rebuild the cordova project.
 
 ### Submission from existing: Xprize console duplication
 
-The second easiest way to modify our existing submission is to duplicate not only our console code base, but all xprize related content as well. First, create a new empty [Pubbly Console](https://github.com/PubblyDevelopment/pubbly_console) (section "Getting started"). Then log into your console, download and unzip the repositories to their local folders, and import an associated database
+The second easiest way to modify our existing submission is to duplicate not only our console code base, but all xprize related content as well. First, create a new empty [Pubbly Console](https://github.com/PubblyDevelopment/pubbly_console) (section "Getting started"). Log into your console, download and unzip the Xprize console content zips to their local folders, and import an associated sql file.
 
 | Type             |                      Zip location                      |   Extract location    |
 |------------------|:------------------------------------------------------:|:---------------------:|
@@ -89,9 +91,9 @@ The second easiest way to modify our existing submission is to duplicate not onl
 | Content SQL file |     xprize.pubbly.com/DuplicateConsole/Content.sql     |       mysql db        |
 
 * Log into your personal console using SSH (EG putty)
-
 > Add the base sql structure if you haven't already (i.e. finish [Pubbly Console](https://github.com/PubblyDevelopment/pubbly_console) section "Getting started")
 > Download content zips from our Xprize server to a local folder
+* cd ~/
 * mkdir tmp
 * cd tmp
 * wget xprize.pubbly.com/DuplicateConsole/StaticExports.zip
@@ -99,23 +101,25 @@ The second easiest way to modify our existing submission is to duplicate not onl
 * wget xprize.pubbly.com/DuplicateConsole/StitchedExports.zip
 * wget xprize.pubbly.com/DuplicateConsole/MappedExports.zip
 > Unzip content to respective web roots
-* sudo unzip StaticExports.zip /var/www/html/books
-* sudo unzip VariableExports.zip /var/www/html/series
-* sudo unzip StitchedExports.zip /var/www/html/schools
-* sudo unzip MappedExports.zip /var/www/html/map
-> Add correct permissions
-* sudo chmod 655 /var/www/html/books -R
-* sudo chmod 655 /var/www/html/series -R
-* sudo chmod 655 /var/www/html/schools -R
-* sudo chmod 655 /var/www/html/map -R
+* sudo apt-get install unzip
+* sudo unzip StaticExports.zip -d /var/www/html/books
+* sudo unzip VariableExports.zip -d /var/www/html/series
+* sudo unzip StitchedExports.zip -d /var/www/html/schools
+* sudo unzip MappedExports.zip -d /var/www/html/map
+> (re)Fix permissions issues
+* cd /var/www/html
+* sudo chmod 755 books series schools map zips deleted* -R
+* sudo chown www-data:ubuntu books series schools map zips deleted* -R
 > Download and import a sql file which reflects your new content.
 * wget xprize.pubbly.com/DuplicateConsole/Content.sql
-* sudo mysql -u root -p pubbly_console < Content.sql
+* sudo mysql -u root -p pubbly_console < Content_Ordered.sql
 > Cleanup
 * cd ../
 * rm -r tmp
 
 You now have an exact snapshot (minus user accounts) of the console TeamCCI used to create the Xprize English/Swahili program.
+
+For how this content can be supplemented, edited, modified, or removed from the console, see [Pubbly Console](https://github.com/PubblyDevelopment/pubbly_console) section "Adding content" 
 
 ### Submission from existing: Design overview.
 
